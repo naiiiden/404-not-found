@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.title {
+    font-size: 24px;
+    font-family: "Inconsolata";
+    font-weight: bold;
+    letter-spacing: -0.08em;
+    padding: 1rem;
+    color: #333333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.scarecrow {
+    width: 18rem;
+}
+
+.news {
+    margin-top: 4rem;
+    width: 90%;
+    font-family: "Space Mono";
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    color: #333333;
+}
+
+.info {
+    font-family: "Space Mono";
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+    color: #4f4f4f;
+    width: 90%;
+}
+
+button {
+    background-color: #333333;
+    width: 13.5rem;
+    height: 4.25rem;
+    border: none;
+    font-family: "Space Mono";
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: -0.035em;
+    margin-top: 2rem;
+}
+
+.btn {
+    width: 90%;
+}
+
+@media screen and (min-width: 1380px) {
+    .scarecrow {
+        width: 33.5rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        gap: 7.5rem;
+        margin-left: 20%;
+    }
+
+    .sub {
+        align-items: flex-start;
+        gap: 2.5rem;
+    }
+
+    .news {
+        width: 67.5%;
+        font-size: 64px;
+        line-height: 94px;
+    }
+
+    .info {
+        width: 55%;
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    button {
+        margin-top: 1rem;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .centered {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+    }
+}
